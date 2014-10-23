@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Evento by erikroyall</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/erikroyall/evento">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Evento</h1>
+            <h2>Cross-browser event handling system</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/erikroyall/evento/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/erikroyall/evento/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="evento" class="anchor" href="#evento"><span class="octicon octicon-link"></span></a>evento</h1>
+
+<p>Light-weight cross-browser event handling system. </p>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>evento provides three functions - <code>add</code>, <code>remove</code>, <code>trigger</code> - which can be used to register, remove, or fire  event handlers to/attached to the <code>EventTarget</code>. The <code>EventTarget</code> must be an instance of <code>Element</code>, <code>Window</code> or <code>Document</code>.</p>
+
+<p>If you don't know what they do, <a href="http://www.smashingmagazine.com/2012/08/17/javascript-events-responding-user/">go learn some JavaScript</a>.</p>
+
+<p><code>.add()</code> - Register the <code>handler</code> to the <code>EventTarget</code> whenever the <code>event</code> is fired.</p>
+
+<div class="highlight highlight-js"><pre><span class="nx">evento</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">EventTarget</span><span class="p">,</span> <span class="nx">event</span><span class="p">,</span> <span class="nx">handler</span><span class="p">);</span>
+</pre></div>
+
+<p><code>.remove()</code> - Remove the <code>handler</code> registered to the <code>EventTarget</code> and prevent it from being called on <code>event</code>.</p>
+
+<div class="highlight highlight-js"><pre><span class="nx">evento</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">EventTarget</span><span class="p">,</span> <span class="nx">event</span><span class="p">,</span> <span class="nx">handler</span><span class="p">);</span>
+</pre></div>
+
+<p><code>.trigger()</code> - Trigger an <code>event</code> on the <code>EventTarget</code>. Note: This will call all handlers that have been registered to be called on <code>event</code> for that <code>EventTarget</code>.</p>
+
+<div class="highlight highlight-js"><pre><span class="nx">evento</span><span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="nx">EventTarget</span><span class="p">,</span> <span class="nx">event</span><span class="p">);</span>
+</pre></div>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/erikroyall">erikroyall</a> can be found on <a href="https://github.com/erikroyall/evento">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
